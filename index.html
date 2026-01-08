@@ -1,42 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E-Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        &nbsp; 
+        &nbsp;
         <h1>Barry Titouan</h1>
     </header>
-    <nav>
+    <nav class="raccourcie">
         <ul>
-            <li><a href="#CV" > CV/Resume</a></li>
-            <li><a href="#GEA"> Projet</a></li>
-            <li><a download href="PDF/CV Barry Titouan.pdf" title="PDF">Download CV.pdf</a></li>
- 
+            <li><a href="#CV"> CV/Resume</a></li>
+            <li><a href="#Project"> Projet</a></li>
+            <li><a href="PDF/CV_FR_Titouan_Barry.pdf" target="_blank" title="PDF">Télécharger CV.pdf</a></li>
+            <li><select id="language-select" class="language-dropdown">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+                </select></li>
         </ul>
     </nav>
 
 
-    <section>
-        <article>
+    <section id="CV">
+        <h2>CV/Resume</h2>
 
-            <h2 id="CV">CV/Resume</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu eleifend purus. Pellentesque egestas lectus mauris, at pharetra dolor accumsan a. Vivamus non imperdiet purus, vel scelerisque ipsum. Proin at aliquam nunc. Etiam facilisis sapien sed dolor sagittis gravida. Sed iaculis neque tortor, id elementum massa accumsan eu. Cras sed eros tristique, accumsan sapien in, porta velit.
-            </p>
-            <p>  
-                Vestibulum convallis eros at nibh pulvinar hendrerit eu sit amet massa. Praesent eu mi quis felis tempus placerat sit amet sed neque. Vivamus venenatis eu velit nec commodo. Donec posuere vitae sapien a suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tristique nec urna quis vulputate. Pellentesque iaculis neque nec velit tincidunt rutrum. Donec non porta lectus. Duis vel velit risus. 
-            </p>
+        <article>
+            <h3>Information personnelles<hr></h3>
+            <p>Numéro de téléphone : 07 49 08 63 86</p>
+            <p>Boîte mail : titouan.barry@etu.univ-smb.fr</p>
+        <p>Linkedin : <a href="https://fr.linkedin.com/in/titouan-barry-a9a064306">Titouan Barry</a></p>
+
         </article>
 
+        <article>
+            <h3>Objectif<hr></h3>
+            <p>Étudiant en deuxième année de Licence de Technologie en informatique à l’IUT d’Annecy, je suis
+                passionné par le domaine de l’informatique et désireux d’approfondir mes compétences techniques. J’apprécie
+                le développement logiciel et j’ai une forte capacité à travailler en équipe tout en faisant preuve d’autonomie. Mon objectif est
+                de contribuer à la réussite de divers projets tout en valorisant mes compétences pour améliorer mes
+                performances professionnelles.</p>
+        </article>
+
+        <article id="skills">
+            <h3>Compétences<hr></h3>
+            <h4>C#</h4>
+            <div class="container">
+                <div class="skills C"></div>
+            </div>
+            <h4>PostgresSQL</h4>
+            <div class="container">
+                <div class="skills SQL"></div>
+            </div>
+            <h4>Python</h4>
+            <div class="container">
+                <div class="skills Python"></div>
+            </div>
+            <h4>HTML / CSS / PHP / JS</h4>
+            <div class="container">
+                <div class="skills Web"></div>
+            </div>
+
+        </article>
+
+        <article>
+            <h3>Language<hr></h3>
+            <p>Anglais : B1 </p>
+            <p>Allemands : A2+</p>
+        </article>
+        <article>
+            <h3>Centres d'intérêts <hr></h3>
+            <p>Centres d'intérêts : Jeu de construction, FPS, tower defense... </p>
+            <p>Kayak polo : Je fais partie du club d'Annecy et participe aux tournois régionaux depuis 7 ans</p>
+            <p>Ski :Pratiquer dans divers clubs</p>
+        </article>
+
+        <article id="References">
+            <h3>Références <hr></h3>
+            <h4>Luc Damas</h4>
+            <p>Professeur de programmation Web</p>
+            <p>Université de Savoie / IUT d'Annecy - France</p>
+            <p>Email : luc.damas@univ-smb.fr</p>
+
+            <h4>Stephanie Vibrac</h4>
+            <p>Professeur d'anglais</p>
+            <p>Université de Savoie / IUT d'Annecy - France</p>
+            <p>Email : stephanie.vibrac@univ-smb.fr</p>
+        </article>
 
     </section>
+    <div id="display">
+        <section id="Project">
+            <h2 >Project / Experience</h2>
+            <article id="proj">
+                <section class="view">
+                    <img id="imgproj" class="lightbox" src="Images/vino.png">
+                </section>
+                <section class="desciption">
+                    <h3 id="titreProj">Création de site internet pour un projet universitaire<hr></h3>
+                    <p id="dateProj">Octobre 2024-février 2025</p>
+                    <p>Projet universitaire de deuxième année </p> 
+                    <p>Lors de ce projet, mon équipe et moi avons dû recréer un site Web existant. Nous avons passé par toutes les étapes :</p>
+                    <ul >Activités : 
+                        <li>Conception du site Web</li>
+                        <li>Créer la base de données du site Web</li>
+                        <li>Développer les fonctionnalités du site Web</li>
+                    </ul>
+                    <nav><a class="more" target="_blank" href="https://github.com/kaplego/VinoTrip.git">Voir plus</a></nav>
+                </section>
+
+                
+            </article>
+            <article id="proj">
+                <section class="view">
+                    <img id="imgproj" class="lightbox" src="Images/jeux.png">
+                </section>
+                <section class="desciption">
+                    <h3 id="titreProj">Projet universitaire de jeux vidéo<hr></h3>
+                    <p id="dateProj">Janvier 2024-Février 2024</p>
+                    <p>Projet universitaire de première année </p>
+                    <p>Ce premier projet universitaire a été réalisé au cours de la première année. Nous avions pour mission de créer et coder un jeu vidéo en utilisant les technologies suivantes :</p>
+                    <ul >Activités : 
+                        <li>Utilisation du .NET Framework</li>
+                        <li>Développer en C#</li>
+                    </ul>
+                    <nav><a class="more" target="_blank" href="https://github.com/TitouanB2/SAE01_02">Voir plus</a></nav>
+                </section>
+
+                
+            </article>
+
+        </section>
+    </div>
+    
+    <section class="formcontainer">
+            <form action="mail.php" method="POST">
+                <h3 id="mailtitre">Envoyez-moi un email !</h3>
+                <input type="text" name="nom" placeholder="Nom" required>
+        
+                <input type="email" name="email"  placeholder="Email" required>
+        
+                <input type="text" name="sujet"  placeholder="Sujet" required>
+
+                <textarea name="message" rows="10" placeholder="Message" required></textarea>
+                
+                <input type="submit" value="Send the message">
+            </form>
+    </section>
+
     <footer>
-        &copy;Titouan Barry 
+        &copy;Titouan Barry
     </footer>
+    <script src="main.js"></script>
 </body>
+
 </html>
