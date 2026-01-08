@@ -52,15 +52,19 @@ document.querySelectorAll(".lightbox").forEach(function(image){
 
 })
 
-const languageSelect = document.getElementById("language-select");
-languageSelect.addEventListener("change", function () {
-    const selectedLanguage = this.value;
-    if(selectedLanguage == 'en')
+const experienceSelect = document.getElementById("language-select");
+experienceSelect.addEventListener("change", function () {
+    const selectedExperience = this.value;
+    if(selectedExperience == 'ep')
     {
-        window.location.href = `index.html`;
+        window.location.href = `experienceProfessionelle.html`;
+    }
+    else if(selectedExperience == 'sp')
+    {
+        window.location.href = `stages.html`;
     }
     else
     {
-        window.location.href = `${selectedLanguage}.html`;
+        window.location.href = `${selectedExperience}.html`;
     }
 });
