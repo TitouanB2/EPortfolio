@@ -55,9 +55,9 @@ header h1 {
 
 .raccourcie li {
     display: inline-block;
+}
+.raccourcie li select {
     font-size: 19px;
-
-
 }
 
 .raccourcie a {
