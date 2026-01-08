@@ -1,104 +1,379 @@
-*{
-    margin:0;
+/* ---------------------générale--------------------- */
+
+* {
+    margin: 0;
     padding: 0;
 
 }
-body{
+
+body {
     font-family: sans-serif;
+    font-size: 19px;
+    background-color: rgb(194, 185, 185);
 }
 
-header{
+header {
     height: 400px;
-    background: white url(Images/fond-ecran-anime-rainwallpaper.jpg) center center no-repeat;
+    background: white url(Images/pp.jpg) center center no-repeat;
     background-size: cover;
 }
 
-h2{
-    background-color: black;
-    text-align: center;
-    color: white;
-    margin: 100px;
-    font-style: italic;
-}
+/* ---------------------front début --------------------- */
 
+#img {
 
-
-h3{
-    font-style: italic;
-}
-
-#img{
-    
-    border-radius:100px ;
+    border-radius: 100px;
     height: 100px;
     width: 100px;
 
 }
 
-.gris{
+.gris {
     background-color: gray;
     margin: 40px;
 }
 
-header h1{
+header h1 {
 
     color: white;
 
     margin-top: 150px;
     padding: 20px;
     text-align: center;
-    
+
 }
 
-nav ul{
+
+.raccourcie ul {
     margin: 50px center;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     display: flex;
     justify-content: center;
 }
-nav li{
+
+
+.raccourcie li {
     display: inline-block;
-    
+
 
 }
 
-nav a{
+.raccourcie a {
     display: block;
-    padding:10px ;
-    background-color: #2a1969;
+    padding: 10px;
+    background-color: #1e3653;
     color: white;
     text-decoration: none;
     margin-left: 10px;
-
-
-
     transition: all 0.5s ease;
+
 }
 
-nav a:hover{
+.raccourcie select
+ {
+    display: block;
+    padding: 10px;
+    background-color: #1e3653;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: all 0.5s ease;
+
+}
+
+.raccourcie select:hover {
     padding-top: 20px;
 }
 
-nav {
-    border-top: solid 10px #2a1969;
+.raccourcie a:hover {
+    padding-top: 20px;
+}
+
+.raccourcie {
+    border-top: solid 10px #1e3653;
+}
+
+
+/* ---------------------mise en forme g------------------ */
+p {
+    padding: 3px;
+    text-align: justify;
+
+}
+
+section {
+    margin: 30px;
+}
+
+article {
+    margin: 15px;
+    padding: 15px;
+    border-color: rgb(31, 30, 30);
+    border: 0.5px solid;
+    border-width: 5px;
+    border-radius: 4%;
+}
+
+h2 {
+    padding: 5px;
+    background-color: rgb(31, 30, 30);
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+
+h3 {
+    font-style: italic;
+
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 2px;
+    background-color: #1928ac;
+    width: 5%;
+}
+
+/* ---------------------Contenu--------------------- */
+
+.container {
+    margin: px;
+    width: 40%;
+    background-color: #ddd;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#References h4{
+    margin: 1%;
+    text-decoration: underline;
+}
+#References p{
+    margin-left: 1%;
+}
+
+.C {
+    width: 90%;
+    background-color: #b4811a;
+}
+
+.SQL {
+    width: 75%;
+    background-color: #b4811a;
+}
+
+.Python {
+    width: 85%;
+    background-color: #b4811a;
+}
+
+.Web {
+    width: 65%;
+    background-color: #b4811a;
+}
+
+
+#skills h4 {
+    margin-top: 10px;
+    margin-left: 1%;
+}
+
+#skills .container {
+    border-color: #000000;
+    border: 2px solid;
+}
+
+
+#display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
 
-footer {
+#proj {
+    display: grid;
+    position: relative;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    margin: 15px;
+    padding: 15px;
+    border-color: rgb(31, 30, 30);
+    border: 0.5px solid;
+    border-width: 5px;
+    border-radius: 4%;
 
+}
+
+.view{
+    margin: 1%;
+    grid-column: 1 / 2;
+}
+.desciption{
+    margin: 1%;
+    grid-column: 2 / 2;
+}
+
+#proj #imgproj{
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+#proj #titreProj{
+    grid-column: 2/2;
+}
+
+#proj hr{
+    margin-bottom: 10px;
+    width: 33%;
+}
+
+#proj p{
+    grid-column: 2/2;
+}
+
+.desciption #dateProj{
+    grid-column: 2/2;
+    margin-left: 60%;
+    font-weight: bold;
+}
+
+.desciption ul{
+    margin: 1%;
+    grid-column: 2/2;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.desciption li{
+    margin-left: 2%;
+    margin-top: 1%;
+    grid-column: 2/2;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+
+
+/* ---------------------image animation--------------------- */
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(30, 54, 83, 0.6);
+}
+
+#box {
+    transition: all 1s ease;
+    margin: calc(10vh - 20px)auto;
+    padding: 20px;
+    width: fit-content;
+    background-color: #1e3653;
+    box-shadow: 5px 5px 15px black;
+    border-radius: 4px;
+    position: relative;
+}
+
+#box.out {
+    transform: translateX(120vw) rotate(30deg);
+}
+
+#box img {
+    height: 80vh;
+}
+
+
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#close:hover {
+    background-color: rgba(rgb(173, 144, 144), rgb(119, 168, 119), rgb(12, 12, 88), 1);
+    color: #1e3653;
+    box-shadow: 0 0 4px black;
+    transform: rotate(360deg);
+
+}
+
+
+/* ---------------------mail--------------------- */
+
+.formulairelink{
+    margin: 25px;
+}
+
+#mailtitre{
+    text-align: center;
+    color: #ddd;
+
+
+}
+.formcontainer{
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e3653;
+}
+
+form input, form textarea{
+    display: block;
+    margin-top: 10%;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #000000;
+    padding: 10%;
+    width: 100%;
+    height: auto;
+}
+
+
+
+form input[type=submit]{
+    width: auto;
+
+}
+
+
+/* ---------------------footer--------------------- */
+
+footer {
+    margin-top: 2%;
     font-weight: bold;
     background-color: black;
     padding: 15px;
     padding-bottom: 15px;
-    color:orange;
+    color: rgb(243, 240, 234);
     text-align: center;
-    margin: 40px;
     font-weight: bold;
-}
-
-p{
-    margin: 40px;
-    text-align: justify;
 }
