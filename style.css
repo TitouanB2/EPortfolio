@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+body{
+    font-family: sans-serif;
+}
+
+header{
+    height: 400px;
+    background: white url(Images/fond-ecran-anime-rainwallpaper.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+h2{
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin: 100px;
+    font-style: italic;
+}
+
+
+
+h3{
+    font-style: italic;
+}
+
+#img{
+    
+    border-radius:100px ;
+    height: 100px;
+    width: 100px;
+
+}
+
+.gris{
+    background-color: gray;
+    margin: 40px;
+}
+
+header h1{
+
+    color: white;
+
+    margin-top: 150px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+nav ul{
+    margin: 50px center;
+    flex-direction:row;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    display: inline-block;
+    
+
+}
+
+nav a{
+    display: block;
+    padding:10px ;
+    background-color: #2a1969;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+
+
+
+    transition: all 0.5s ease;
+}
+
+nav a:hover{
+    padding-top: 20px;
+}
+
+nav {
+    border-top: solid 10px #2a1969;
+}
+
+
+
+footer {
+
+    font-weight: bold;
+    background-color: black;
+    padding: 15px;
+    padding-bottom: 15px;
+    color:orange;
+    text-align: center;
+    margin: 40px;
+    font-weight: bold;
+}
+
+p{
+    margin: 40px;
+    text-align: justify;
+}
