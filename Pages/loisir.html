@@ -4,209 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Loisirs - E-Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e8e4e1;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #4a1d8f;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-            text-align: left;
-            padding-left: 50px;
-        }
-
-        .carousel-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .carousel {
-            position: relative;
-            width: 100%;
-            height: 500px;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-
-        .carousel-slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        .carousel-slide.active {
-            opacity: 1;
-        }
-
-        .carousel-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .carousel-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(255, 255, 255, 0.95);
-            padding: 30px 40px;
-            border-radius: 5px;
-            max-width: 400px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .carousel-text h2 {
-            font-size: 1em;
-            margin-bottom: 10px;
-            color: #333;
-            font-weight: normal;
-        }
-
-        .carousel-text strong {
-            color: #000;
-            font-weight: bold;
-        }
-
-        .carousel-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(106, 27, 154, 0.8);
-            color: white;
-            border: none;
-            font-size: 2em;
-            padding: 15px 20px;
-            cursor: pointer;
-            z-index: 10;
-            transition: background-color 0.3s;
-        }
-
-        .carousel-button:hover {
-            background-color: rgba(106, 27, 154, 1);
-        }
-
-        .carousel-button.prev {
-            left: 0;
-        }
-
-        .carousel-button.next {
-            right: 0;
-        }
-
-        .carousel-indicators {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 8px;
-            z-index: 10;
-        }
-
-        .indicator {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.5);
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .indicator.active {
-            background-color: #8b5cf6;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/loisirs.css">
 </head>
 <body>
-    <h1>Mes loisirs</h1>
+    <!-- Inclusion du header (tu peux utiliser JavaScript ou PHP pour l'inclure) -->
+    <!-- Option 1: Copier-coller le contenu de header.html ici -->
+    <!-- Option 2: Utiliser JavaScript (voir ci-dessous) -->
     
-    <div class="carousel-container">
-        <div class="carousel">
-            <!-- Slide 1 -->
-            <div class="carousel-slide active">
-                <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=1200&h=800&fit=crop" alt="Ski">
-                <div class="carousel-text">
-                    <h2><strong>Ski :</strong> passionné de sports d'hiver, je pratique le ski alpin chaque saison dans les stations des Alpes - j'aime particulièrement le hors-piste et les descentes techniques</h2>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1>Mes loisirs</h1>
+        
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- Slide 1 -->
+                <div class="carousel-slide active">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=1200&h=800&fit=crop" alt="Ski">
+                    <div class="carousel-text">
+                        <h2><strong>Ski :</strong> passionné de sports d'hiver, je pratique le ski alpin chaque saison dans les stations des Alpes - j'aime particulièrement le hors-piste et les descentes techniques</h2>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Slide 2 -->
-            <div class="carousel-slide">
-                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&h=800&fit=crop" alt="Kayak">
-                <div class="carousel-text">
-                    <h2><strong>Kayak :</strong> exploration des lacs et rivières de la région - je pratique régulièrement sur le lac d'Annecy et participe à des sorties en eau vive durant l'été</h2>
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&h=800&fit=crop" alt="Kayak">
+                    <div class="carousel-text">
+                        <h2><strong>Kayak :</strong> exploration des lacs et rivières de la région - je pratique régulièrement sur le lac d'Annecy et participe à des sorties en eau vive durant l'été</h2>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Slide 3 -->
-            <div class="carousel-slide">
-                <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=1200&h=800&fit=crop" alt="Jeux vidéo">
-                <div class="carousel-text">
-                    <h2><strong>Jeux vidéo :</strong> joueur passionné depuis l'enfance - j'apprécie particulièrement les jeux de stratégie, les RPG et les jeux compétitifs en ligne avec mes amis</h2>
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=1200&h=800&fit=crop" alt="Jeux vidéo">
+                    <div class="carousel-text">
+                        <h2><strong>Jeux vidéo :</strong> joueur passionné depuis l'enfance - j'apprécie particulièrement les jeux de stratégie, les RPG et les jeux compétitifs en ligne avec mes amis</h2>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Slide 4 -->
-            <div class="carousel-slide">
-                <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1200&h=800&fit=crop" alt="Photographie">
-                <div class="carousel-text">
-                    <h2><strong>Photographie :</strong> capture de paysages et de moments du quotidien - je me spécialise dans la photographie de montagne et de nature, avec un appareil reflex que j'emporte en randonnée</h2>
+                <!-- Slide 4 -->
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1200&h=800&fit=crop" alt="Photographie">
+                    <div class="carousel-text">
+                        <h2><strong>Photographie :</strong> capture de paysages et de moments du quotidien - je me spécialise dans la photographie de montagne et de nature, avec un appareil reflex que j'emporte en randonnée</h2>
+                    </div>
                 </div>
-            </div>
 
-            <button class="carousel-button prev" onclick="changeSlide(-1)">‹</button>
-            <button class="carousel-button next" onclick="changeSlide(1)">›</button>
+                <button class="carousel-button prev" onclick="changeSlide(-1)">‹</button>
+                <button class="carousel-button next" onclick="changeSlide(1)">›</button>
 
-            <div class="carousel-indicators">
-                <span class="indicator active" onclick="goToSlide(0)"></span>
-                <span class="indicator" onclick="goToSlide(1)"></span>
-                <span class="indicator" onclick="goToSlide(2)"></span>
-                <span class="indicator" onclick="goToSlide(3)"></span>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(0)"></span>
+                    <span class="indicator" onclick="goToSlide(1)"></span>
+                    <span class="indicator" onclick="goToSlide(2)"></span>
+                    <span class="indicator" onclick="goToSlide(3)"></span>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel-slide');
-        const indicators = document.querySelectorAll('.indicator');
-
-        function showSlide(n) {
-            slides[currentSlide].classList.remove('active');
-            indicators[currentSlide].classList.remove('active');
-            
-            currentSlide = (n + slides.length) % slides.length;
-            
-            slides[currentSlide].classList.add('active');
-            indicators[currentSlide].classList.add('active');
-        }
-
-        function changeSlide(direction) {
-            showSlide(currentSlide + direction);
-        }
-
-        function goToSlide(n) {
-            showSlide(n);
-        }
-
-        // Auto-play (optionnel)
-        setInterval(() => {
-            changeSlide(1);
-        }, 5000);
-    </script>
+    <script src="../js/carousel.js"></script>
+    <script src="../js/header-loader.js"></script>
 </body>
 </html>
