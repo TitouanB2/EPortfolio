@@ -23,11 +23,12 @@ function updateActiveNav() {
     const pageConfig = {
         'index.html': { nav: 'nav-accueil', breadcrumb: 'Accueil', showBreadcrumb: false },
         '': { nav: 'nav-accueil', breadcrumb: 'Accueil', showBreadcrumb: false },
-        '../Pages/formation.html': { nav: 'nav-formation', breadcrumb: 'Ma formation' },
-        '../Pages/competence.html': { nav: 'nav-competences', breadcrumb: 'Compétences' },
-        '../Pages/projet.html': { nav: 'nav-projets', breadcrumb: 'Projets' },
-        '../Pages/loisir.html': { nav: 'nav-loisirs', breadcrumb: 'Mes loisirs' },
-        '../Pages/contact.html': { nav: 'nav-contact', breadcrumb: 'Contact' }
+        'formation.html': { nav: 'nav-formation', breadcrumb: 'Ma formation' },
+        'competences.html': { nav: 'nav-competences', breadcrumb: 'Compétences' },
+        'projets.html': { nav: 'nav-projets', breadcrumb: 'Projets' },
+        'loisirs.html': { nav: 'nav-loisirs', breadcrumb: 'Mes loisirs' },
+        'loisir.html': { nav: 'nav-loisirs', breadcrumb: 'Mes loisirs' }, // Ajout pour gérer les deux noms
+        'contact.html': { nav: 'nav-contact', breadcrumb: 'Contact' }
     };
     
     // Récupère la configuration de la page actuelle
