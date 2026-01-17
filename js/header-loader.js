@@ -19,8 +19,8 @@ function updateActiveNav() {
         '../index.html': { nav: 'nav-accueil', breadcrumb: 'Accueil', showBreadcrumb: false },
         '../Pages/formation.html': { nav: 'nav-formation', breadcrumb: 'Ma formation' },
         '../Pages/competence.html': { nav: 'nav-competences', breadcrumb: 'Compétences' },
-        '../Pages/projets.html': { nav: 'nav-projets', breadcrumb: 'Projets' },
-        '../Pages/loisirs.html': { nav: 'nav-loisirs', breadcrumb: 'Mes loisirs' },
+        '../Pages/projet.html': { nav: 'nav-projets', breadcrumb: 'Projets' },
+        '../Pages/loisir.html': { nav: 'nav-loisirs', breadcrumb: 'Mes loisirs' },
         '../Pages/contact.html': { nav: 'nav-contact', breadcrumb: 'Contact' }
     };
     
