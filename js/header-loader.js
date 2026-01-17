@@ -12,11 +12,17 @@ fetch('../Header/header.html')
 // Fonction pour mettre à jour la navigation active
 function updateActiveNav() {
     // Récupère le nom de la page actuelle
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    let currentPage = window.location.pathname.split('/').pop();
+    
+    // Si la page est vide (racine du site), utilise index.html
+    if (!currentPage || currentPage === '') {
+        currentPage = 'index.html';
+    }
     
     // Configuration des pages et leurs titres
     const pageConfig = {
-        '../index.html': { nav: 'nav-accueil', breadcrumb: 'Accueil', showBreadcrumb: false },
+        'index.html': { nav: 'nav-accueil', breadcrumb: 'Accueil', showBreadcrumb: false },
+        '': { nav: 'nav-accueil', breadcrumb: 'Accueil', showBreadcrumb: false },
         '../Pages/formation.html': { nav: 'nav-formation', breadcrumb: 'Ma formation' },
         '../Pages/competence.html': { nav: 'nav-competences', breadcrumb: 'Compétences' },
         '../Pages/projet.html': { nav: 'nav-projets', breadcrumb: 'Projets' },
@@ -25,7 +31,14 @@ function updateActiveNav() {
     };
     
     // Récupère la configuration de la page actuelle
-    const config = pageConfig[currentPage] || pageConfig['index.html'];
+    // Si la page n'existe pas dans la config, utilise la config par défaut (accueil)
+    const config = pageConfig[currentPage];
+    
+    // Si la config n'existe pas, on sort de la fonction
+    if (!config) {
+        console.warn(`Page "${currentPage}" non trouvée dans la configuration`);
+        return;
+    }
     
     // Met à jour le lien actif dans la navigation
     const activeLink = document.getElementById(config.nav);
