@@ -1,40 +1,83 @@
-.experience-container {
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 20px;
-    text-align: center;
+/* --------------------- Page Expériences --------------------- */
+
+body {
+    background-color: #e8e4e1;
 }
 
+/* Conteneur principal */
+.experience-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+/* Titre principal */
 .experience-container h1 {
-    font-size: 2.2rem;
+    text-align: center;
+    font-size: 2.5em;
+    color: #4a1d8f;
     margin-bottom: 40px;
 }
 
+/* Carte principale */
 .experience-card {
-    background-color: #f5f5f5;
+    background-color: white;
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #8b5cf6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.experience-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.3);
+}
+
+/* Paragraphes */
 .experience-card p {
-    font-size: 1.1rem;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #444;
     margin-bottom: 20px;
-    line-height: 1.6;
+    text-align: justify;
 }
 
+.experience-card strong {
+    color: #4a1d8f;
+}
+
+/* Lien vers les stages (CTA) */
 .experience-link {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #1e90ff;
-    color: white;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
     text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
 .experience-link:hover {
-    background-color: #0f6cd1;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .experience-container h1 {
+        font-size: 2em;
+    }
+
+    .experience-card {
+        padding: 25px;
+    }
+
+    .experience-card p {
+        font-size: 1em;
+    }
 }
