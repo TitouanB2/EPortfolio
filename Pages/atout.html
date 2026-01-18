@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Atouts - E-Portfolio</title>
+    <link rel="stylesheet" href="../Header/header.css">
+    <link rel="stylesheet" href="../CSS/atout.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1>Mes atouts</h1>
+        
+        <!-- Onglets de navigation -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('informatique')">Atouts Informatiques</button>
+            <button class="tab-btn" onclick="showTab('langues')">Langues étrangères</button>
+            <button class="tab-btn" onclick="showTab('soft-skills')">Soft Skills</button>
+        </div>
+
+        <!-- Contenu Atouts Informatiques -->
+        <div id="informatique" class="tab-content active">
+            <section class="atout-section">
+                <h2>Langages Informatiques</h2>
+                <div class="skill-item">
+                    <h3>C#</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <p>Niveau avancé (POO, création d'API, d'application Console et d'application WPF)</p>
+                </div>
+                
+                <div class="skill-item">
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <p>Maîtrise pour la création d'algorithmes et d'applications console comme avec interface graphique</p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>WLangage</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                    <p>Bases solides (création d'application)</p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>HTML/CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <p>Niveau avancé (création de sites web, application desktop)</p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <p>Bases solides (création de sites web, application desktop)</p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>PHP</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <p>Bases solides (création de sites web)</p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>SQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <p>Maîtrise pour la manipulation de bases de données</p>
+                </div>
+            </section>
+
+            <section class="atout-section">
+                <h2>Frameworks</h2>
+                <div class="framework-list">
+                    <div class="framework-item">
+                        <h4>.Net</h4>
+                        <p>Niveau avancé pour toutes applications en C# et WPF</p>
+                    </div>
+                    <div class="framework-item">
+                        <h4>Laravel</h4>
+                        <p>Bonnes connaissances du framework PHP</p>
+                    </div>
+                    <div class="framework-item">
+                        <h4>Électron</h4>
+                        <p>Bases solides (création d'application desktop)</p>
+                    </div>
+                    <div class="framework-item">
+                        <h4>Windev</h4>
+                        <p>Bases solides (application desktop)</p>
+                    </div>
+                    <div class="framework-item">
+                        <h4>Phaser</h4>
+                        <p>Bases solides (création d'un jeu dans un site web)</p>
+                    </div>
+                    <div class="framework-item">
+                        <h4>Vue.js / Flask / Flutter</h4>
+                        <p>Connaissances de base en développement web et mobile</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="atout-section">
+                <h2>Bases de données</h2>
+                <div class="framework-list">
+                    <div class="framework-item">
+                        <h4>PostgreSQL</h4>
+                        <p>Niveau avancé (création et manipulation de base de données, création de requêtes complexes)</p>
+                    </div>
+                    <div class="framework-item">
+                        <h4>HFSQL</h4>
+                        <p>Bases solides (création et manipulation de données)</p>
+                    </div>
+                    <div class="framework-item">
+                        <h4>SQLite</h4>
+                        <p>Bases solides (création et manipulation de données)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="atout-section">
+                <h2>Systèmes & DevOps</h2>
+                <div class="framework-list">
+                    <div class="framework-item">
+                        <h4>Systèmes</h4>
+                        <p>Linux, Windows</p>
+                    </div>
+                    <div class="framework-item">
+                        <h4>Test & DevOps</h4>
+                        <p>xUnit, MOQ, Cypress, Playwright, GitLab, Azure, DevOps</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contenu Langues -->
+        <div id="langues" class="tab-content">
+            <section class="atout-section">
+                <h2>Compétences linguistiques</h2>
+                
+                <div class="language-item">
+                    <div class="language-header">
+                        <h3>Français</h3>
+                        <span class="language-level">Langue maternelle</span>
+                    </div>
+                    <p>Maîtrise parfaite à l'oral et à l'écrit</p>
+                </div>
+
+                <div class="language-item">
+                    <div class="language-header">
+                        <h3>Anglais</h3>
+                        <span class="language-level">B2+ - Intermédiaire avancé</span>
+                    </div>
+                    <p>Bonne compréhension écrite et orale, capable de communiquer dans un contexte professionnel</p>
+                </div>
+
+                <div class="language-item">
+                    <div class="language-header">
+                        <h3>Allemand</h3>
+                        <span class="language-level">A2+ - Pré-intermédiaire</span>
+                    </div>
+                    <p>Bases de communication et compréhension de textes simples</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contenu Soft Skills -->
+        <div id="soft-skills" class="tab-content">
+            <section class="atout-section">
+                <h2>Qualités personnelles et professionnelles</h2>
+                
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">🎯</div>
+                        <h3>Objectifs clairs</h3>
+                        <p>Je vise toujours à atteindre mes objectifs avec détermination</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">🤝</div>
+                        <h3>Fiabilité</h3>
+                        <p>Je suis digne de confiance et j'apprécie l'importance de la responsabilité</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">⏰</div>
+                        <h3>Gestion du temps</h3>
+                        <p>Je possède de bonnes compétences en gestion du temps et suis ponctuel</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">👥</div>
+                        <h3>Travail en équipe</h3>
+                        <p>J'aime travailler en équipe et collaborer efficacement</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">💡</div>
+                        <h3>Curiosité</h3>
+                        <p>Passionné par l'informatique, toujours désireux d'approfondir mes compétences techniques</p>
+                    </div>
+
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">🚀</div>
+                        <h3>Autonomie</h3>
+                        <p>Capacité à développer des solutions de manière autonome tout en démontrant des compétences en automatisation</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../js/header-loader.js"></script>
+    <script src="../js/atout.js"></script>
+</body>
+</html>
