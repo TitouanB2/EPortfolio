@@ -1,379 +1,400 @@
-/* ---------------------générale--------------------- */
-
+/* ---------------------Général--------------------- */
 * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 19px;
-    background-color: rgb(194, 185, 185);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color: #e8e4e1;
 }
 
-header {
+/* ---------------------Banner avec image--------------------- */
+.banner {
     height: 400px;
-    background: white url(Images/pp.jpg) center center no-repeat;
+    background: url(Images/pp.jpg) center center no-repeat;
     background-size: cover;
-}
-
-/* ---------------------front début --------------------- */
-
-#img {
-
-    border-radius: 100px;
-    height: 100px;
-    width: 100px;
-
-}
-
-.gris {
-    background-color: gray;
-    margin: 40px;
-}
-
-header h1 {
-
-    color: white;
-
-    margin-top: 150px;
-    padding: 20px;
-    text-align: center;
-
-}
-
-
-.raccourcie ul {
-    margin: 50px center;
-    flex-direction: row;
     display: flex;
+    align-items: center;
     justify-content: center;
+    position: relative;
 }
 
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
-.raccourcie li {
+.banner h1 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* ---------------------Header Navigation--------------------- */
+header {
+    background-color: #4a1d8f;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover,
+header nav a.active {
+    background-color: #6a1b9a;
+}
+
+/* Dropdown dans le header */
+.dropdown {
+    position: relative;
     display: inline-block;
 }
 
-
-.raccourcie a {
-    display: block;
-    padding: 10px;
-    background-color: #1e3653;
+.dropdown-btn {
+    background-color: transparent;
     color: white;
-    text-decoration: none;
-    margin-left: 10px;
-    transition: all 0.5s ease;
-
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.raccourcie select
- {
-    display: block;
-    padding: 10px;
-    background-color: #1e3653;
+.dropdown-btn:hover {
+    background-color: #6a1b9a;
+}
+
+.dropdown-arrow {
+    font-size: 0.7em;
+    transition: transform 0.3s;
+}
+
+.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6a1b9a;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+    margin-top: 0;
+}
+
+.dropdown-content a {
     color: white;
+    padding: 12px 16px;
     text-decoration: none;
-    margin-left: 10px;
-    transition: all 0.5s ease;
-    border-color: #1e3653;
-    
-
+    display: block;
+    font-size: 1em;
+    transition: background-color 0.3s;
 }
 
-.raccourcie select:hover {
-    padding-top: 20px;
+.dropdown-content a:hover {
+    background-color: #8b5cf6;
 }
 
-.raccourcie a:hover {
-    padding-top: 20px;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-.raccourcie {
-    border-top: solid 10px #1e3653;
-}
-
-
-/* ---------------------mise en forme g------------------ */
-p {
-    padding: 3px;
-    text-align: justify;
-
+/* ---------------------Main Content--------------------- */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 section {
-    margin: 30px;
-}
-
-article {
-    margin: 15px;
-    padding: 15px;
-    border-color: rgb(31, 30, 30);
-    border: 0.5px solid;
-    border-width: 5px;
-    border-radius: 4%;
+    margin: 30px 0;
 }
 
 h2 {
-    padding: 5px;
-    background-color: rgb(31, 30, 30);
+    padding: 15px;
+    background-color: #4a1d8f;
     text-align: center;
     color: white;
-    font-style: italic;
+    font-size: 1.8em;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
+article {
+    margin: 20px 0;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
 h3 {
-    font-style: italic;
-
+    color: #4a1d8f;
+    font-size: 1.5em;
+    margin-bottom: 15px;
 }
 
 hr {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 2px;
-    background-color: #1928ac;
-    width: 5%;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    height: 3px;
+    background-color: #8b5cf6;
+    border: none;
+    width: 60px;
 }
 
-/* ---------------------Contenu--------------------- */
+p {
+    padding: 5px 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+p strong {
+    color: #4a1d8f;
+}
+
+a {
+    color: #8b5cf6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #6a1b9a;
+    text-decoration: underline;
+}
+
+/* ---------------------Compétences avec barres--------------------- */
+#skills {
+    background-color: white;
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-item h4 {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
 
 .container {
-    margin: px;
-    width: 40%;
-    background-color: #ddd;
+    width: 100%;
+    max-width: 600px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 25px;
 }
 
 .skills {
-    text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
+    height: 100%;
+    background: linear-gradient(90deg, #6a1b9a, #8b5cf6);
+    transition: width 1s ease;
 }
 
-#References h4{
-    margin: 1%;
-    text-decoration: underline;
-}
-#References p{
-    margin-left: 1%;
-}
+.C { width: 90%; }
+.SQL { width: 75%; }
+.Python { width: 85%; }
+.Web { width: 65%; }
 
-.C {
-    width: 90%;
-    background-color: #b4811a;
-}
-
-.SQL {
-    width: 75%;
-    background-color: #b4811a;
-}
-
-.Python {
-    width: 85%;
-    background-color: #b4811a;
-}
-
-.Web {
-    width: 65%;
-    background-color: #b4811a;
-}
-
-
-#skills h4 {
-    margin-top: 10px;
-    margin-left: 1%;
-}
-
-#skills .container {
-    border-color: #000000;
-    border: 2px solid;
-}
-
-
-#display{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-
-#proj {
-    display: grid;
-    position: relative;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto;
-    margin: 15px;
+/* ---------------------Références--------------------- */
+#References .reference-item {
+    margin: 20px 0;
     padding: 15px;
-    border-color: rgb(31, 30, 30);
-    border: 0.5px solid;
-    border-width: 5px;
-    border-radius: 4%;
-
-}
-
-.view{
-    margin: 1%;
-    grid-column: 1 / 2;
-}
-.desciption{
-    margin: 1%;
-    grid-column: 2 / 2;
-}
-
-#proj #imgproj{
-    width: 75%;
-    height: auto;
-    border-radius: 8px;
-
-}
-
-#proj #titreProj{
-    grid-column: 2/2;
-}
-
-#proj hr{
-    margin-bottom: 10px;
-    width: 33%;
-}
-
-#proj p{
-    grid-column: 2/2;
-}
-
-.desciption #dateProj{
-    grid-column: 2/2;
-    margin-left: 60%;
-    font-weight: bold;
-}
-
-.desciption ul{
-    margin: 1%;
-    grid-column: 2/2;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-.desciption li{
-    margin-left: 2%;
-    margin-top: 1%;
-    grid-column: 2/2;
-    font-style: italic;
-    margin-bottom: 5px;
-}
-
-
-
-/* ---------------------image animation--------------------- */
-
-#bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(30, 54, 83, 0.6);
-}
-
-#box {
-    transition: all 1s ease;
-    margin: calc(10vh - 20px)auto;
-    padding: 20px;
-    width: fit-content;
-    background-color: #1e3653;
-    box-shadow: 5px 5px 15px black;
+    background-color: #f9f7fc;
+    border-left: 4px solid #8b5cf6;
     border-radius: 4px;
-    position: relative;
 }
 
-#box.out {
-    transform: translateX(120vw) rotate(30deg);
+#References h4 {
+    color: #4a1d8f;
+    margin-bottom: 5px;
 }
 
-#box img {
-    height: 80vh;
+/* ---------------------Projets--------------------- */
+#Project {
+    background-color: transparent;
 }
 
-
-
-#close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    text-align: center;
-    border-radius: 50%;
-    font-family: sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all .5s ease;
+.proj {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    align-items: start;
 }
 
-#close:hover {
-    background-color: rgba(rgb(173, 144, 144), rgb(119, 168, 119), rgb(12, 12, 88), 1);
-    color: #1e3653;
-    box-shadow: 0 0 4px black;
-    transform: rotate(360deg);
-
-}
-
-
-/* ---------------------mail--------------------- */
-
-.formulairelink{
-    margin: 25px;
-}
-
-#mailtitre{
-    text-align: center;
-    color: #ddd;
-
-
-}
-.formcontainer{
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 30px;
+.view {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1e3653;
 }
 
-form input, form textarea{
+.imgproj {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.imgproj:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.description h3 {
+    color: #4a1d8f;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.description .date {
+    color: #8b5cf6;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.description li {
+    margin: 8px 0;
+    color: #666;
+}
+
+.more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #8b5cf6;
+    color: white !important;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.more:hover {
+    background-color: #6a1b9a;
+    text-decoration: none;
+}
+
+/* ---------------------Formulaire de contact--------------------- */
+.formcontainer {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #4a1d8f;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#mailtitre {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+form input, 
+form textarea {
     display: block;
-    margin-top: 10%;
-    font-family: sans-serif;
+    margin: 15px 0;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     border-radius: 5px;
-    border-width: 1px;
-    border-color: #000000;
-    padding: 10%;
+    border: 1px solid #ccc;
+    padding: 12px;
     width: 100%;
-    height: auto;
 }
 
-
-
-form input[type=submit]{
+form input[type=submit] {
     width: auto;
-
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
 }
 
+form input[type=submit]:hover {
+    background-color: #6a1b9a;
+}
 
-/* ---------------------footer--------------------- */
-
+/* ---------------------Footer--------------------- */
 footer {
-    margin-top: 2%;
-    font-weight: bold;
-    background-color: black;
-    padding: 15px;
-    padding-bottom: 15px;
-    color: rgb(243, 240, 234);
+    margin-top: 50px;
+    background-color: #2c2c3e;
+    padding: 20px;
+    color: white;
     text-align: center;
     font-weight: bold;
+}
+
+/* ---------------------Responsive--------------------- */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    header nav a,
+    .dropdown-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .proj {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        max-width: 100%;
+    }
 }

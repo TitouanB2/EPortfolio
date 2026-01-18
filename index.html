@@ -1,164 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>E-Portfolio Titouan BARRY</title>
+    <link rel="stylesheet" href="./CSS/header.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        &nbsp;
+    <!-- Banner avec image de fond -->
+    <div class="banner">
         <h1>E-portfolio Titouan BARRY</h1>
+    </div>
+
+    <!-- Header avec navigation en dessous de l'image -->
+    <header>
+        <nav>
+            <a href="./index.html" id="nav-accueil" class="active">Qui je suis ?</a>
+            <a href="./Pages/formation.html" id="nav-formation">Ma formation</a>
+            
+            <div class="dropdown">
+                <button class="dropdown-btn" id="nav-actions">
+                    Mes actions professionnelles
+                    <span class="dropdown-arrow">▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="./Pages/experiences.html" id="nav-experiences">Mes expériences professionnelles</a>
+                    <a href="./Pages/stages.html" id="nav-stages">Mes stages professionnels</a>
+                    <a href="./Pages/sae.html" id="nav-sae">Mes SAE</a>
+                </div>
+            </div>
+            
+            <a href="./Pages/competence.html" id="nav-competences">Mes compétences</a>
+            <a href="./Pages/atout.html" id="nav-atouts">Mes atouts</a>
+            <a href="./Pages/loisir.html" id="nav-loisirs">Mes loisirs</a>
+        </nav>
     </header>
-    <nav class="raccourcie">
-        <ul>
-            <li><a href="./Pages/formation.html"> Ma formation</a></li>
-            <li><select id="language-select" class="language-dropdown" style="font-size: 19px;">Mes actions profressionnelles :
-                <option value="ep">Mes experiences professionnelles</option>
-                <option value="sp">Mes stages professionnelles</option>
-                <option value="sae">Mes situations d'apprentissage et d'évalutation</option>
-            </select></li>
-            <li><a href="./Pages/competence.html"> Mes compétences</a></li>
-            <li><a href="./Pages/atout.html"  title="PDF">Mes atouts</a></li>
-            <li><a href="./Pages/loisir.html">Mes loisirs</a></li>
 
-        </ul>
-    </nav>
+    <main>
+        <!-- Section CV/Resume -->
+        <section id="CV">
+            <h2>À propos de moi</h2>
 
+            <article>
+                <h3>Informations personnelles<hr></h3>
+                <p><strong>Téléphone :</strong> 07 49 08 63 86</p>
+                <p><strong>Email :</strong> titouan.barry@etu.univ-smb.fr</p>
+                <p><strong>LinkedIn :</strong> <a href="https://fr.linkedin.com/in/titouan-barry-a9a064306" target="_blank">Titouan Barry</a></p>
+            </article>
 
-    <section id="CV">
-        <h2>CV/Resume</h2>
+            <article>
+                <h3>Objectif professionnel<hr></h3>
+                <p>Étudiant en deuxième année de BUT Informatique parcours Réalisation d'Applications à l'IUT d'Annecy, je suis passionné par le domaine de l'informatique et désireux d'approfondir mes compétences techniques. J'apprécie le développement logiciel et j'ai une forte capacité à travailler en équipe tout en faisant preuve d'autonomie. Mon objectif est de contribuer à la réussite de divers projets tout en valorisant mes compétences pour améliorer mes performances professionnelles.</p>
+            </article>
 
-        <article>
-            <h3>Information personnelles<hr></h3>
-            <p>Numéro de téléphone : 07 49 08 63 86</p>
-            <p>Boîte mail : titouan.barry@etu.univ-smb.fr</p>
-        <p>Linkedin : <a href="https://fr.linkedin.com/in/titouan-barry-a9a064306">Titouan Barry</a></p>
+            <article id="skills">
+                <h3>Compétences techniques<hr></h3>
+                <div class="skill-item">
+                    <h4>C#</h4>
+                    <div class="container">
+                        <div class="skills C"></div>
+                    </div>
+                </div>
 
-        </article>
+                <div class="skill-item">
+                    <h4>PostgreSQL</h4>
+                    <div class="container">
+                        <div class="skills SQL"></div>
+                    </div>
+                </div>
 
-        <article>
-            <h3>Objectif<hr></h3>
-            <p>Étudiant en deuxième année de Licence de Technologie en informatique à l’IUT d’Annecy, je suis
-                passionné par le domaine de l’informatique et désireux d’approfondir mes compétences techniques. J’apprécie
-                le développement logiciel et j’ai une forte capacité à travailler en équipe tout en faisant preuve d’autonomie. Mon objectif est
-                de contribuer à la réussite de divers projets tout en valorisant mes compétences pour améliorer mes
-                performances professionnelles.</p>
-        </article>
+                <div class="skill-item">
+                    <h4>Python</h4>
+                    <div class="container">
+                        <div class="skills Python"></div>
+                    </div>
+                </div>
 
-        <article id="skills">
-            <h3>Compétences<hr></h3>
-            <h4>C#</h4>
-            <div class="container">
-                <div class="skills C"></div>
-            </div>
-            <h4>PostgresSQL</h4>
-            <div class="container">
-                <div class="skills SQL"></div>
-            </div>
-            <h4>Python</h4>
-            <div class="container">
-                <div class="skills Python"></div>
-            </div>
-            <h4>HTML / CSS / PHP / JS</h4>
-            <div class="container">
-                <div class="skills Web"></div>
-            </div>
+                <div class="skill-item">
+                    <h4>HTML / CSS / PHP / JS</h4>
+                    <div class="container">
+                        <div class="skills Web"></div>
+                    </div>
+                </div>
+            </article>
 
-        </article>
+            <article>
+                <h3>Langues<hr></h3>
+                <p><strong>Français :</strong> Langue maternelle</p>
+                <p><strong>Anglais :</strong> B2+ - Intermédiaire avancé</p>
+                <p><strong>Allemand :</strong> A2+ - Pré-intermédiaire</p>
+            </article>
 
-        <article>
-            <h3>Language<hr></h3>
-            <p>Anglais : B1 </p>
-            <p>Allemands : A2+</p>
-        </article>
-        <article>
-            <h3>Centres d'intérêts <hr></h3>
-            <p>Centres d'intérêts : Jeu de construction, FPS, tower defense... </p>
-            <p>Kayak polo : Je fais partie du club d'Annecy et participe aux tournois régionaux depuis 7 ans</p>
-            <p>Ski :Pratiquer dans divers clubs</p>
-        </article>
+            <article>
+                <h3>Centres d'intérêts<hr></h3>
+                <p><strong>Jeux vidéo :</strong> Jeux de construction, FPS, tower defense...</p>
+                <p><strong>Kayak polo :</strong> Je fais partie du club d'Annecy et participe aux tournois régionaux depuis 7 ans</p>
+                <p><strong>Ski :</strong> Pratique dans divers clubs</p>
+                <p><strong>Photographie :</strong> Capture de paysages et de moments du quotidien</p>
+            </article>
 
-        <article id="References">
-            <h3>Références <hr></h3>
-            <h4>Luc Damas</h4>
-            <p>Professeur de programmation Web</p>
-            <p>Université de Savoie / IUT d'Annecy - France</p>
-            <p>Email : luc.damas@univ-smb.fr</p>
+            <article id="References">
+                <h3>Références<hr></h3>
+                <div class="reference-item">
+                    <h4>Luc Damas</h4>
+                    <p>Professeur de programmation Web</p>
+                    <p>Université de Savoie / IUT d'Annecy - France</p>
+                    <p>Email : luc.damas@univ-smb.fr</p>
+                </div>
 
-            <h4>Stephanie Vibrac</h4>
-            <p>Professeur d'anglais</p>
-            <p>Université de Savoie / IUT d'Annecy - France</p>
-            <p>Email : stephanie.vibrac@univ-smb.fr</p>
-        </article>
+                <div class="reference-item">
+                    <h4>Stéphanie Vibrac</h4>
+                    <p>Professeur d'anglais</p>
+                    <p>Université de Savoie / IUT d'Annecy - France</p>
+                    <p>Email : stephanie.vibrac@univ-smb.fr</p>
+                </div>
+            </article>
+        </section>
 
-    </section>
-    <div id="display">
+        <!-- Section Projets -->
         <section id="Project">
-            <h2 >Project / Experience</h2>
-            <article id="proj">
-                <section class="view">
-                    <img id="imgproj" class="lightbox" src="Images/vino.png">
-                </section>
-                <section class="desciption">
-                    <h3 id="titreProj">Création de site internet pour un projet universitaire<hr></h3>
-                    <p id="dateProj">Octobre 2024-février 2025</p>
-                    <p>Projet universitaire de deuxième année </p> 
+            <h2>Projets / Expériences</h2>
+
+            <article class="proj">
+                <div class="view">
+                    <img class="imgproj" src="Images/vino.png" alt="Projet VinoTrip">
+                </div>
+                <div class="description">
+                    <h3>Création de site internet pour un projet universitaire<hr></h3>
+                    <p class="date">Octobre 2024 - Février 2025</p>
+                    <p><em>Projet universitaire de deuxième année</em></p> 
                     <p>Lors de ce projet, mon équipe et moi avons dû recréer un site Web existant. Nous avons passé par toutes les étapes :</p>
-                    <ul >Activités : 
+                    <ul>
                         <li>Conception du site Web</li>
                         <li>Créer la base de données du site Web</li>
                         <li>Développer les fonctionnalités du site Web</li>
                     </ul>
-                    <nav><a class="more" target="_blank" href="https://github.com/kaplego/VinoTrip.git">Voir plus</a></nav>
-                </section>
-
-                
+                    <a class="more" target="_blank" href="https://github.com/kaplego/VinoTrip.git">Voir plus</a>
+                </div>
             </article>
-            <article id="proj">
-                <section class="view">
-                    <img id="imgproj" class="lightbox" src="Images/jeux.png">
-                </section>
-                <section class="desciption">
-                    <h3 id="titreProj">Projet universitaire de jeux vidéo<hr></h3>
-                    <p id="dateProj">Janvier 2024-Février 2024</p>
-                    <p>Projet universitaire de première année </p>
+
+            <article class="proj">
+                <div class="view">
+                    <img class="imgproj" src="Images/jeux.png" alt="Projet jeu vidéo">
+                </div>
+                <div class="description">
+                    <h3>Projet universitaire de jeux vidéo<hr></h3>
+                    <p class="date">Janvier 2024 - Février 2024</p>
+                    <p><em>Projet universitaire de première année</em></p>
                     <p>Ce premier projet universitaire a été réalisé au cours de la première année. Nous avions pour mission de créer et coder un jeu vidéo en utilisant les technologies suivantes :</p>
-                    <ul >Activités : 
+                    <ul>
                         <li>Utilisation du .NET Framework</li>
                         <li>Développer en C#</li>
                     </ul>
-                    <nav><a class="more" target="_blank" href="https://github.com/TitouanB2/SAE01_02">Voir plus</a></nav>
-                </section>
-
-                
+                    <a class="more" target="_blank" href="https://github.com/TitouanB2/SAE01_02">Voir plus</a>
+                </div>
             </article>
-
         </section>
-    </div>
-    
-    <section class="formcontainer">
+
+        <!-- Section Contact -->
+        <section class="formcontainer">
             <form action="mail.php" method="POST">
                 <h3 id="mailtitre">Envoyez-moi un email !</h3>
                 <input type="text" name="nom" placeholder="Nom" required>
-        
-                <input type="email" name="email"  placeholder="Email" required>
-        
-                <input type="text" name="sujet"  placeholder="Sujet" required>
-
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="sujet" placeholder="Sujet" required>
                 <textarea name="message" rows="10" placeholder="Message" required></textarea>
-                
-                <input type="submit" value="Send the message">
+                <input type="submit" value="Envoyer le message">
             </form>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        &copy;Titouan Barry
+        &copy; 2025 Titouan Barry - Tous droits réservés
     </footer>
+
     <script src="main.js"></script>
 </body>
-
 </html>
