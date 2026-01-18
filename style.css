@@ -133,55 +133,189 @@ header nav a.active {
 
 /* ---------------------Section Qui suis-je--------------------- */
 #qui-suis-je {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 40px auto;
 }
 
-.intro-box {
-    background-color: #2c2c3e;
-    color: white;
-    padding: 25px 35px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.presentation-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* Section photo et infos rapides */
+.photo-section {
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.photo-placeholder {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.quick-facts {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quick-facts h3 {
+    color: #4a1d8f;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.quick-facts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-facts li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e8e4e1;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.quick-facts li:last-child {
+    border-bottom: none;
+}
+
+.quick-facts strong {
+    color: #8b5cf6;
+}
+
+/* Section texte */
+.text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.text-section article {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-left: 5px solid #8b5cf6;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.intro-box h3 {
-    color: #a5d8ff;
+.text-section article:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 15px rgba(139, 92, 246, 0.3);
+}
+
+.text-section h3 {
+    color: #4a1d8f;
     font-size: 1.5em;
-    margin-bottom: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.intro-box p {
-    font-size: 1.1em;
-    line-height: 1.7;
-    color: #e0e0e0;
+.text-section p {
+    font-size: 1.05em;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
 }
 
-.intro-box .highlight {
-    color: #a78bfa;
-    font-weight: bold;
+.text-section .highlight {
+    color: #8b5cf6;
+    font-weight: 600;
+    background-color: #f3f0ff;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+/* Boutons CTA */
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
 }
 
 /* ---------------------Contact Info & Objectif--------------------- */
 #contact-info,
 #objectif {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 40px auto;
 }
 
 #contact-info article,
 #objectif article {
     background-color: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #objectif article p {
     font-size: 1.1em;
     line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .presentation-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .photo-section {
+        position: relative;
+        display: flex;
+        gap: 20px;
+        align-items: start;
+    }
+
+    .photo-placeholder {
+        width: 150px;
+        height: 150px;
+        font-size: 3em;
+        flex-shrink: 0;
+    }
+
+    .quick-facts {
+        flex: 1;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
 }
 main {
     max-width: 1400px;
