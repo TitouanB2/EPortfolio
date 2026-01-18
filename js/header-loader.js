@@ -21,18 +21,18 @@ function updateActiveNav() {
     
     // Configuration des pages et leurs titres
     const pageConfig = {
-        'index.html': { nav: 'nav-accueil', breadcrumb: 'Accueil', showBreadcrumb: false },
-        '': { nav: 'nav-accueil', breadcrumb: 'Accueil', showBreadcrumb: false },
+        'index.html': { nav: 'nav-accueil', breadcrumb: 'Qui je suis ?', showBreadcrumb: false },
+        '': { nav: 'nav-accueil', breadcrumb: 'Qui je suis ?', showBreadcrumb: false },
         'formation.html': { nav: 'nav-formation', breadcrumb: 'Ma formation' },
-        'competences.html': { nav: 'nav-competences', breadcrumb: 'Compétences' },
-        'projets.html': { nav: 'nav-projets', breadcrumb: 'Projets' },
-        'loisirs.html': { nav: 'nav-loisirs', breadcrumb: 'Mes loisirs' },
-        'loisir.html': { nav: 'nav-loisirs', breadcrumb: 'Mes loisirs' }, // Ajout pour gérer les deux noms
-        'contact.html': { nav: 'nav-contact', breadcrumb: 'Contact' }
+        'experiences.html': { nav: 'nav-experiences', breadcrumb: 'Mes expériences professionnelles', parentNav: 'nav-actions' },
+        'stages.html': { nav: 'nav-stages', breadcrumb: 'Mes stages professionnels', parentNav: 'nav-actions' },
+        'sae.html': { nav: 'nav-sae', breadcrumb: 'Mes SAE', parentNav: 'nav-actions' },
+        'competence.html': { nav: 'nav-competences', breadcrumb: 'Mes compétences' },
+        'atout.html': { nav: 'nav-atouts', breadcrumb: 'Mes atouts' },
+        'loisir.html': { nav: 'nav-loisirs', breadcrumb: 'Mes loisirs' }
     };
     
     // Récupère la configuration de la page actuelle
-    // Si la page n'existe pas dans la config, utilise la config par défaut (accueil)
     const config = pageConfig[currentPage];
     
     // Si la config n'existe pas, on sort de la fonction
@@ -45,6 +45,14 @@ function updateActiveNav() {
     const activeLink = document.getElementById(config.nav);
     if (activeLink) {
         activeLink.classList.add('active');
+    }
+    
+    // Si la page fait partie d'un sous-menu, active aussi le menu parent
+    if (config.parentNav) {
+        const parentLink = document.getElementById(config.parentNav);
+        if (parentLink) {
+            parentLink.classList.add('active');
+        }
     }
     
     // Met à jour le fil d'Ariane
