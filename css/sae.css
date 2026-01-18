@@ -297,6 +297,43 @@ footer {
     font-weight: bold;
 }
 
+/* Liens GitHub */
+.project-links {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 2px solid #f0f0f0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.github-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.github-link svg {
+    transition: transform 0.3s;
+}
+
+.github-link:hover svg {
+    transform: rotate(360deg);
+}
+
 /* Responsive */
 @media (max-width: 1200px) {
     .sae-content {
