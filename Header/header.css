@@ -43,6 +43,9 @@ nav a.active {
     padding: 5px 0;
     transition: opacity 0.3s;
     font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .dropdown-btn:hover {
@@ -53,6 +56,15 @@ nav a.active {
     font-weight: bold;
     border-bottom: 2px solid white;
     padding-bottom: 2px;
+}
+
+.dropdown-arrow {
+    font-size: 0.7em;
+    transition: transform 0.3s;
+}
+
+.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
 }
 
 .dropdown-content {
