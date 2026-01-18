@@ -131,7 +131,58 @@ header nav a.active {
     display: block;
 }
 
-/* ---------------------Main Content--------------------- */
+/* ---------------------Section Qui suis-je--------------------- */
+#qui-suis-je {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.intro-box {
+    background-color: #2c2c3e;
+    color: white;
+    padding: 25px 35px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-left: 5px solid #8b5cf6;
+}
+
+.intro-box h3 {
+    color: #a5d8ff;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.intro-box p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+.intro-box .highlight {
+    color: #a78bfa;
+    font-weight: bold;
+}
+
+/* ---------------------Contact Info & Objectif--------------------- */
+#contact-info,
+#objectif {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+#contact-info article,
+#objectif article {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#objectif article p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
 main {
     max-width: 1400px;
     margin: 0 auto;
