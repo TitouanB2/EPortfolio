@@ -123,9 +123,7 @@ header nav a.active {
     transition: background-color 0.3s;
 }
 
-.dropdown-content a:hover {
-    background-color: #8b5cf6;
-}
+
 
 .dropdown:hover .dropdown-content {
     display: block;
