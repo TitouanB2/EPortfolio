@@ -1,0 +1,316 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8e4e1;
+}
+
+main {
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #4a1d8f;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+/* Carte de stage */
+.stage-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.2);
+}
+
+/* En-tête du stage */
+.stage-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px;
+    color: white;
+}
+
+.stage-company {
+    display: flex;
+    gap: 25px;
+    align-items: start;
+}
+
+.company-logo {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    object-fit: contain;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.company-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.company-info h3 {
+    font-size: 1.3em;
+    margin-bottom: 12px;
+    color: #f0e6ff;
+    font-weight: 500;
+}
+
+.stage-date,
+.stage-location {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #e0d4ff;
+}
+
+/* Contenu du stage */
+.stage-content {
+    padding: 35px;
+}
+
+.stage-content > div {
+    margin-bottom: 30px;
+}
+
+.stage-content h4 {
+    color: #4a1d8f;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #8b5cf6;
+    padding-bottom: 8px;
+}
+
+.stage-content p {
+    line-height: 1.8;
+    color: #444;
+    font-size: 1.05em;
+}
+
+/* Listes de tâches */
+.stage-tasks ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.stage-tasks li {
+    padding: 12px 0 12px 30px;
+    position: relative;
+    line-height: 1.6;
+    color: #555;
+}
+
+.stage-tasks li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #8b5cf6;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.stage-tasks li strong {
+    color: #4a1d8f;
+}
+
+/* Grille de compétences */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.skill-tag {
+    background: linear-gradient(135deg, #f3f0ff 0%, #e9e3ff 100%);
+    color: #4a1d8f;
+    padding: 10px 18px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.95em;
+    font-weight: 500;
+    border: 2px solid #d0c4f5;
+    transition: all 0.3s;
+}
+
+.skill-tag:hover {
+    background: linear-gradient(135deg, #8b5cf6 0%, #6a1b9a 100%);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Technologies */
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech-badge {
+    background-color: #4a1d8f;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.tech-badge:hover {
+    background-color: #6a1b9a;
+    transform: scale(1.05);
+}
+
+/* Compétences BUT */
+.competences-but {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.competence-item {
+    background-color: #f9f7fc;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #8b5cf6;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.competence-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+}
+
+.competence-item h5 {
+    color: #4a1d8f;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.competence-item p {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* Réalisations */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.achievement-card {
+    background: linear-gradient(135deg, #f9f7fc 0%, #ede9f5 100%);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+    border-color: #8b5cf6;
+}
+
+.achievement-icon {
+    font-size: 2.5em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.achievement-card h5 {
+    color: #4a1d8f;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.achievement-card p {
+    color: #666;
+    font-size: 0.95em;
+}
+
+/* Documents */
+.stage-documents {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f7fc;
+    border-radius: 8px;
+}
+
+.doc-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.doc-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    background-color: #2c2c3e;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .stage-company {
+        flex-direction: column;
+    }
+
+    .company-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .stage-content {
+        padding: 20px;
+    }
+
+    .competences-but,
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+}
