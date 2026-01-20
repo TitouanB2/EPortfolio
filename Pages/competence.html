@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Compétences - E-Portfolio</title>
+    <link rel="stylesheet" href="../Header/header.css">
+    <link rel="stylesheet" href="../css/competence.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <h1>Mes compétences</h1>
+        <p class="intro">Actuellement en deuxième année de <strong>BUT Informatique</strong>, parcours <strong>Réalisation d'Applications : conception, développement, validation</strong></p>
+
+        <!-- Navigation par compétences -->
+        <div class="competences-nav">
+            <button class="comp-btn active" data-comp="realiser">Réaliser</button>
+            <button class="comp-btn" data-comp="optimiser">Optimiser</button>
+            <button class="comp-btn" data-comp="administrer">Administrer</button>
+            <button class="comp-btn" data-comp="gerer">Gérer</button>
+            <button class="comp-btn" data-comp="conduire">Conduire</button>
+            <button class="comp-btn" data-comp="collaborer">Collaborer</button>
+        </div>
+
+        <!-- Contenu des compétences -->
+        <div id="competences-content">
+            <!-- Compétence 1: Réaliser -->
+            <div class="comp-content active" id="realiser">
+                <h2>Réaliser un développement d'application</h2>
+                
+                <!-- Niveau 1 -->
+                <div class="niveau-section">
+                    <h3>Niveau 1 : Développer des applications informatiques simples</h3>
+                    <p class="context">Durant ma 1ère année de BUT Informatique, j'ai développé une application de réservation de véhicules pour Intermarché en équipe de 3 étudiants.</p>
+                    
+                    <div class="ac-grid">
+                        <div class="ac-card">
+                            <h4>AC11.01 | Implémenter des conceptions simples</h4>
+                            <p>Création de 10 classes pour manipuler les objets du système de réservation en suivant le diagramme de classes conçu en amont.</p>
+                            <p class="image-alt">📊 [Image: Diagramme de classes de l'application]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC11.02 | Élaborer des conceptions simples</h4>
+                            <p>Réalisation de diagrammes UML (diagrammes de classes et de séquences) avec Visual Paradigm pour structurer l'application avant le développement.</p>
+                            <p class="image-alt">📈 [Image: Diagramme de séquence - Réservation véhicule]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC11.03 | Faire des essais et évaluer leurs résultats</h4>
+                            <p>Tests manuels systématiques de chaque fonction développée pour valider leur conformité aux spécifications du cahier des charges.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC11.04 | Développer des interfaces utilisateurs</h4>
+                            <p>Conception et développement d'interfaces WPF pour toutes les étapes de réservation : authentification, recherche de véhicule, ajout d'options, création client.</p>
+                            <p class="image-alt">🖥️ [Image: Interface de recherche de véhicule]</p>
+                            <p class="image-alt">👤 [Image: Interface de création client]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Niveau 2 -->
+                <div class="niveau-section">
+                    <h3>Niveau 2 : Partir des exigences et aller jusqu'à une application complète</h3>
+                    <p class="context">Durant ma 2ème année, j'ai développé un site e-commerce de vente de vélos électriques d'occasion (Upway) en équipe de 5 étudiants avec Laravel.</p>
+                    
+                    <div class="ac-grid">
+                        <div class="ac-card">
+                            <h4>AC21.01 | Élaborer et implémenter les spécifications</h4>
+                            <p>Analyse complète du document client et réalisation de diagrammes UML/BPMN : Use Cases, séquences, classes, états, classes participantes, et collaborations BPMN.</p>
+                            <p class="image-alt">📋 [Image: Diagramme de Use Case Upway]</p>
+                            <p class="image-alt">🔄 [Image: Diagramme de classes complet]</p>
+                            <p class="image-alt">⚡ [Image: Diagramme de séquence - Commande]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC21.02 | Appliquer des principes d'accessibilité et d'ergonomie</h4>
+                            <p>Interface avec bandeau de navigation intuitif, menus déroulants organisés, recherche avancée avec filtres, système de favoris et alertes utilisateur.</p>
+                            <p class="image-alt">🎨 [Image: Interface principale avec filtres]</p>
+                            <p class="image-alt">🔍 [Image: Système de navigation et ergonomie]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC21.03 | Adopter de bonnes pratiques</h4>
+                            <p>Organisation en sprints hebdomadaires, priorisation des fonctionnalités, répartition du travail en équipe, respect des conventions Laravel et cohérence du code.</p>
+                            <p class="image-alt">⚙️ [Image: Controller vélo - Code Laravel]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC21.04 | Vérifier et valider la qualité</h4>
+                            <p>Au second semestre, développement d'une API REST avec VueJS et mise en place de tests unitaires pour valider les échanges API et la cohérence des données.</p>
+                            <p class="image-alt">✅ [Image: Tests unitaires]</p>
+                        </div>
+                    </div>
+
+                    <div class="project-summary">
+                        <h4>Résultat</h4>
+                        <p>Plus de 80% des fonctionnalités finalisées en 5 semaines, application stable et démonstrations hebdomadaires au client.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 2: Optimiser -->
+            <div class="comp-content" id="optimiser">
+                <h2>Optimiser des applications informatiques</h2>
+                
+                <div class="niveau-section">
+                    <h3>Niveau 1 : Appréhender et construire des algorithmes</h3>
+                    <p class="context">Application de réservation de véhicules Intermarché (BUT1).</p>
+                    
+                    <div class="ac-grid">
+                        <div class="ac-card">
+                            <h4>AC12.01 | Analyser un problème avec méthode</h4>
+                            <p>Découpage de chaque fonctionnalité en étapes simples : récupération des données, filtrage, tri, affichage, interactions.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC12.02 | Comparer des algorithmes</h4>
+                            <p>Étude et choix de l'algorithme Foreach pour filtrer efficacement les données de la base de données et accéder à toutes les données une par une.</p>
+                            <p class="image-alt">🔄 [Image: Code Foreach de filtrage]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC12.03 | Formaliser des outils mathématiques</h4>
+                            <p>Calcul automatique du montant total de réservation incluant le prix du véhicule, la durée et l'assurance.</p>
+                            <p class="image-alt">🧮 [Image: Fonction de calcul de prix]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="niveau-section">
+                    <h3>Niveau 2 : Sélectionner les algorithmes adéquats</h3>
+                    <p class="context">Site e-commerce Upway (BUT2).</p>
+                    
+                    <div class="ac-grid">
+                        <div class="ac-card">
+                            <h4>AC22.01 | Choisir des structures de données complexes</h4>
+                            <p>Utilisation des modèles Laravel pour structurer les données. Chaque table représentée par un modèle avec méthodes de récupération variées selon les besoins.</p>
+                            <p class="image-alt">📦 [Image: Modèle Vélo Laravel]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC22.02 | Utiliser des techniques algorithmiques adaptées</h4>
+                            <p>Combinaison de filtres et d'ordres d'affichage pour optimiser les requêtes : filtrage par critères et tri par pertinence, prix croissant/décroissant.</p>
+                            <p class="image-alt">🔀 [Image: Système de tri et filtrage]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC22.03 | Comprendre les enjeux de sécurisation</h4>
+                            <p>Utilisation de Laravel pour limiter les injections SQL, validation des entrées, accès sécurisé par mots de passe hashés.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC22.04 | Évaluer l'impact environnemental</h4>
+                            <p>Optimisation des requêtes, pagination pour limiter les chargements inutiles, réduction de la consommation serveur, interface accessible et inclusive.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 3: Administrer -->
+            <div class="comp-content" id="administrer">
+                <h2>Administrer des systèmes informatiques communicants complexes</h2>
+                
+                <div class="niveau-section">
+                    <h3>Niveau 1 : Installer et configurer un poste de travail</h3>
+                    <p class="context">Projet Raspberry Pi - Installation WordPress (BUT1, équipe de 3).</p>
+                    
+                    <div class="ac-grid">
+                        <div class="ac-card">
+                            <h4>AC13.01 | Identifier les composants d'un système</h4>
+                            <p>Identification des composants nécessaires : machine physique/virtuelle (processeur, RAM, stockage), système d'exploitation (Linux, Windows), services logiciels (Apache2, PHP, MariaDB, OpenSSH).</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC13.02 | Utiliser un système multitâches</h4>
+                            <p>Utilisation des commandes Linux essentielles : mise à jour système, manipulation de fichiers, gestion des permissions, installation de paquets. Création d'un guide d'installation en anglais.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC13.03 | Installer et configurer un système</h4>
+                            <p>Installation complète de l'environnement serveur : Apache2, PHP et ses librairies, MariaDB sécurisé, CMS WordPress, configuration SSH.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC13.04 | Configurer un poste de travail</h4>
+                            <p>Configuration réseau de la machine : activation SSH, configuration Apache, accès externe au service web, activation SSL et mod_evasive pour la sécurité.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-docs">
+                        <a href="#" class="doc-link">📥 Guide d'installation Raspberry Pi WordPress</a>
+                    </div>
+                </div>
+
+                <div class="niveau-section">
+                    <h3>Niveau 2 : Déployer des services dans une architecture réseau</h3>
+                    <p class="context">Site e-commerce Upway (BUT2).</p>
+                    
+                    <div class="ac-grid">
+                        <div class="ac-card">
+                            <h4>AC23.01 | Concevoir des applications communicantes</h4>
+                            <p>Architecture client-serveur avec API REST en C# et client VueJS, respectant les principes du modèle client-serveur avec échanges HTTP/JSON.</p>
+                            <p class="image-alt">🔗 [Schema: Client Vue.js → HTTP/JSON → API REST C# → Base de données]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC23.02 | Utiliser des serveurs virtualisés</h4>
+                            <p>Hébergement sur Microsoft Azure : environnement cloud distant accessible à tout moment, facilitant le déploiement et les tests de l'application.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC23.03 | Sécuriser les services et données</h4>
+                            <p>Accès serveur Azure limité aux 5 membres de l'équipe, comptes protégés par mots de passe différents, droits d'accès réglementés par rôle, base de données avec mots de passe hashés.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 4: Gérer -->
+            <div class="comp-content" id="gerer">
+                <h2>Gérer des données de l'information</h2>
+                
+                <div class="niveau-section">
+                    <h3>Niveau 1 : Concevoir et mettre en place une base de données</h3>
+                    <p class="context">Projet Matski - Refonte base de données (BUT1).</p>
+                    
+                    <div class="ac-grid">
+                        <div class="ac-card">
+                            <h4>AC14.01 | Mettre à jour et interroger une base</h4>
+                            <p>Réalisation de requêtes SQL pour répondre aux questions du client et analyser les données économiques de l'entreprise.</p>
+                            <p class="image-alt">💾 [Image: Requêtes SQL d'analyse]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC14.02 | Visualiser des données</h4>
+                            <p>Présentation des résultats de requêtes pour permettre au client d'analyser ses données de vente et d'approvisionnement.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC14.03 | Concevoir une base de données</h4>
+                            <p>Analyse de la base actuelle, identification des erreurs (attributs inutiles, doublons), conception d'une nouvelle base corrigée avec ajout de la partie achats (Fournisseur, Contact, Approvisionnement, Caractéristiques).</p>
+                            <p class="image-alt">🗄️ [Image: Ancienne base de données Matski]</p>
+                            <p class="image-alt">✨ [Image: Nouvelle base de données optimisée]</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="niveau-section">
+                    <h3>Niveau 2 : Optimiser une base de données</h3>
+                    <p class="context">Site e-commerce Upway (BUT2).</p>
+                    
+                    <div class="ac-grid">
+                        <div class="ac-card">
+                            <h4>AC24.01 | Optimiser les modèles de données</h4>
+                            <p>Structuration de la base pour éviter les doublons, faciliter les requêtes et optimiser les performances selon les contraintes client.</p>
+                            <p class="image-alt">📊 [Image: MCD Upway optimisé]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC24.02 | Assurer la sécurité des données</h4>
+                            <p>Accès aux données uniquement par le code, accès à la base et au code restreints par mots de passe hashés et sécurisés.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC24.03 | Organiser la restitution de données</h4>
+                            <p>Vues dynamiques avec filtrage (marques, type, prix) et tri (pertinence, récent), pagination pour une navigation claire et structurée.</p>
+                            <p class="image-alt">🎯 [Image: Catalogue vélos avec filtres]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC24.04 | Manipuler des données hétérogènes</h4>
+                            <p>Gestion de données variées : entrées utilisateur (création compte, commandes), données base (articles, commandes, clients), ajouts/suppressions par administrateurs.</p>
+                            <p class="image-alt">👤 [Image: Interface création compte]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 5: Conduire -->
+            <div class="comp-content" id="conduire">
+                <h2>Conduire un projet informatique</h2>
+                
+                <div class="niveau-section">
+                    <h3>Niveau 1 : Identifier les besoins métiers</h3>
+                    <p class="context">Cahier des charges Intermarché - Location de véhicules (BUT1, équipe de 3).</p>
+                    
+                    <div class="ac-grid">
+                        <div class="ac-card">
+                            <h4>AC15.01 | Appréhender les besoins du client</h4>
+                            <p>Analyse approfondie distinguant les besoins des différents acteurs (client, service accueil, logistique, contentieux), étude de l'existant (équipements, logiciels, système).</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC15.02 | Mettre en place les outils de gestion</h4>
+                            <p>Structuration MOA/MOE avec définition des rôles et responsabilités, planning prévisionnel du cahier des charges au lancement du développement.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC15.03 | Identifier les acteurs et phases</h4>
+                            <p>Identification du cycle : analyse besoins, conception (diagrammes, maquettes), développement, tests, mise en production. Distinction MOA (besoins métier) et MOE (réalisation technique).</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC25.02 | Formaliser les besoins</h4>
+                            <p>Rédaction du cahier des charges avec maquettes illustrant la future application et ses fonctionnalités fonctionnelles et non fonctionnelles.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-docs">
+                        <a href="#" class="doc-link">📥 Cahier des charges Intermarché</a>
+                    </div>
+                </div>
+
+                <div class="niveau-section">
+                    <h3>Niveau 2 : Appliquer une démarche de suivi de projet</h3>
+                    <p class="context">Site e-commerce Upway (BUT2).</p>
+                    
+                    <div class="ac-grid">
+                        <div class="ac-card">
+                            <h4>AC25.01 | Identifier les processus</h4>
+                            <p>Étude des processus client et création de BPMN pour les processus de vente et de paiement.</p>
+                            <p class="image-alt">🔄 [Image: BPMN Processus public paiement]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC25.03 | Identifier les critères de faisabilité</h4>
+                            <p>Utilisation du planning poker pour étudier, filtrer et trier les fonctionnalités par priorité et niveau de faisabilité.</p>
+                            <p class="image-alt">🃏 [Image: Planning poker - Évaluation fonctionnalités]</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC25.04 | Définir une démarche de suivi</h4>
+                            <p>Organisation en sprints hebdomadaires : choix des fonctionnalités en début de semaine selon priorité et faisabilité, présentation au client en fin de semaine, distribution des tâches en équipe.</p>
+                            <p class="image-alt">📅 [Image: Organisation des sprints]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétence 6: Collaborer -->
+            <div class="comp-content" id="collaborer">
+                <h2>Travailler dans une équipe informatique</h2>
+                
+                <div class="niveau-section">
+                    <h3>Niveau 1 : Identifier ses aptitudes pour travailler en équipe</h3>
+                    <p class="context">Ensemble des projets BUT (travaux de groupe nécessitant coordination, communication, répartition de rôles).</p>
+                    
+                    <div class="ac-grid">
+                        <div class="ac-card">
+                            <h4>AC16.01 | Appréhender l'écosystème numérique</h4>
+                            <p>Utilisation d'outils variés :</p>
+                            <ul>
+                                <li>Partage : Teams, Discord, GitHub</li>
+                                <li>Stockage : GitHub, OVH</li>
+                                <li>Développement : Visual Studio Code</li>
+                                <li>Planification : Trello</li>
+                            </ul>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC16.02 | Découvrir les aptitudes</h4>
+                            <p>Compétences développées : développement back-end et front-end, conception de bases de données, création de diagrammes, travail en équipe avec distribution de rôles.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC16.03 | Identifier les statuts des membres</h4>
+                            <p>Répartition des rôles selon les tâches (conception, base de données, développement, tests), utilisation de méthodes comme SCRUM pour organiser le travail.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC16.04 | Acquérir des compétences interpersonnelles</h4>
+                            <p>Développement de l'écoute, communication au sein de l'équipe, entraide, résolution de conflits entre membres.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="niveau-section">
+                    <h3>Niveau 2 : Situer son rôle au sein d'une équipe</h3>
+                    <p class="context">Projets BUT + Stages professionnels.</p>
+                    
+                    <div class="ac-grid">
+                        <div class="ac-card">
+                            <h4>AC26.01 | Comprendre la diversité de l'informatique</h4>
+                            <p>Vision concrète de l'organisation informatique lors du stage chez ECM Technologie et de l'alternance chez Bouygues énergies & services.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC26.02 | Intégrer une équipe informatique</h4>
+                            <p>Stage BUT2 chez ECM Technologie : intégration dans un projet d'automatisation de déclaration d'échange de biens (DEB), participation aux réunions quotidiennes, phases de développement sur 10 semaines.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC26.03 | Mobiliser les compétences interpersonnelles</h4>
+                            <p>Communication claire, écoute active, respect des décisions collectives, entraide pour coordonner les tâches et maintenir une bonne dynamique de groupe.</p>
+                        </div>
+
+                        <div class="ac-card">
+                            <h4>AC26.04 | Rendre compte de son activité</h4>
+                            <p>Réunions régulières avec le tuteur de stage pour vérifier l'avancement, validation des fonctionnalités, présentation des sprints au client (Upway).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Titouan Barry - Tous droits réservés
+    </footer>
+
+    <script src="../js/header-loader.js"></script>
+    <script src="../js/competence.js"></script>
+</body>
+</html>
