@@ -162,6 +162,21 @@ header nav a.active {
     font-size: 5em;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.photo-placeholder span {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .quick-facts {
@@ -387,7 +402,7 @@ a {
 }
 
 a:hover {
-
+    color: #6a1b9a;
     text-decoration: underline;
 }
 
